@@ -1,0 +1,153 @@
+/* --- Resetando margens e preenchimento para todos os elementos --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Corpo da página --- */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #5F0D1B;
+    background-color: #5F0D1B;
+}
+
+/* --- Cabeçalho --- */
+header {
+    background-color: #f5f5f5;
+    padding: 1rem 8rem;
+    color: #5F0D1B;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem 8rem; */
+}
+
+header img{
+    width: 8rem;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #5F0D1B;
+    text-decoration: none;
+}
+
+header nav ul li .dropdown-menu a {
+    color: #5F0D1B;
+}
+
+/* --- Seção Principal --- */
+#home {
+    background-color: #db5f9b;
+    color: #5F0D1B;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* --- Seção de Produtos --- */
+.products {
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.products h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 
+    
+    
+    (228, 149, 192, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    box-shadow: 0 4px 16px #5F0D1B(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5F0D1B;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #db5f9b; /* Cor suave de rosa */
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #db5f9b;
+    color: #5F0D1B;
+    text-align: center;
+    padding: 20px;
+}
+
+/* --- Scroll Suave --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Botão de Compra Interativo --- */
+.product-item button {
+    background-color: #db5f9b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #FCEBF1; /* Alteração de cor no hover */
+}
